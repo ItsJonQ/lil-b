@@ -258,6 +258,14 @@ pre,
 }
 
 /**
+ * .text-lowercase
+ * This helper class transforms the text within to all lowercase
+ */
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/**
  * .v-center
  * This helper class helps vertically align elements.
  * In order to get .v-center to work properly, you have to have a child div
