@@ -197,3 +197,23 @@ pre,
     margin-left: auto;
     margin-right auto;
 }
+
+
+/**
+ * Helper Classes
+ * @additional
+ * @helper
+ */
+
+/**
+ * .fixed-z
+ * This helper class adds the "translateZ" hack for selectors that are set
+ * as position: fixed to help prevent brower repaints on browser scrolls/resize
+ */
+.fixed-z {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
