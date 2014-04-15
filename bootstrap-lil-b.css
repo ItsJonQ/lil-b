@@ -170,10 +170,14 @@ pre,
 }
 
 
+
 /**
- * Grid: Columns
+ * Helper Classes
  * @additional
+ * @helper
  */
+
+
 /**
  * .col-solo
  * This is designed to be added to "column" sized elements where you wish to have
@@ -197,13 +201,6 @@ pre,
     margin-left: auto;
     margin-right auto;
 }
-
-
-/**
- * Helper Classes
- * @additional
- * @helper
- */
 
 /**
  * .fixed-z
