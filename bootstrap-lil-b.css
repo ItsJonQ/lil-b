@@ -249,20 +249,20 @@ pre,
 }
 
 /**
- * .text-caps
- * This helper class transforms the text within to all caps / uppercase
- */
-
-.text-caps {
-    text-transform: uppercase;
-}
-
-/**
  * .text-lowercase
  * This helper class transforms the text within to all lowercase
  */
 .text-lowercase {
     text-transform: lowercase;
+}
+
+/**
+ * .text-uppercase
+ * This helper class transforms the text within to all uppercase / uppercase
+ */
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 /**
