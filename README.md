@@ -9,7 +9,7 @@ Lil' B is a Bootstrap Reset Stylesheet. It was created to"fix" some margin/spaci
 - Download the bootstrap-lil-b.css file and add it to your project
 - Load it up **after** you add bootstrap to your project
 
-**Example**
+#####Example#####
 ```
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-lil-b.css">
@@ -17,7 +17,7 @@ Lil' B is a Bootstrap Reset Stylesheet. It was created to"fix" some margin/spaci
 
 #### Helper Classes ####
 
-**"Solo" Column**
+#####"Solo" Column#####
 *.col-solo*
 
 ```
@@ -33,7 +33,7 @@ This is designed to be added to "column" sized elements where you wish to have a
 This is useful for single-page type layouts where content blocks need to be slightly narrower instead of col-md-12 or container width (default-max 1170px)
 
 
-**"Position:Fixed" Optimizer**
+#####"Position:Fixed" Optimizer#####
 *.fixed-z*
 
 ```
@@ -45,7 +45,7 @@ This is useful for single-page type layouts where content blocks need to be slig
 This helper class adds the "translateZ" hack for selectors that are set as position: fixed to help prevent brower repaints on browser scrolls/resize.
 
 
-**Disable Selection (No-Select)**
+#####Disable Selection (No-Select)#####
 *.no-select*
 
 ```
@@ -57,7 +57,7 @@ This helper class adds the "translateZ" hack for selectors that are set as posit
 This helper class disables selection for selectors. This is handy for navigations, links, headers, buttons, etc..
 
 
-**Text: Lowercase**
+#####Text: Lowercase#####
 *.text-lowercase*
 
 ```
@@ -69,7 +69,7 @@ This helper class disables selection for selectors. This is handy for navigation
 This helper class transforms the text within to all lowercase.
 
 
-**Text: Uppercase**
+#####Text: Uppercase#####
 *.text-uppercase*
 
 ```
@@ -80,7 +80,7 @@ This helper class transforms the text within to all lowercase.
 
 This helper class transforms the text within to all lowercase.
 
-**Vertical Align Center**
+#####Vertical Align Center#####
 *.v-center*
 
 ```
