@@ -120,6 +120,13 @@ ol {
     margin-bottom: 1.5em;
 }
 
+/*Adding margin-top offset to lists if followed by a paragraph for even spacing*/
+p + dt,
+p + ul,
+p + ol {
+    margin-top: -0.15em;
+}
+
 
 /**
  * Border Control
