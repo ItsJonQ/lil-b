@@ -16,7 +16,7 @@
     ],
     "ignore": [
         ".*",
-        "test/**/*",
-        "images/**/*"
+        "test",
+        "images"
     ]
 }
