@@ -90,7 +90,7 @@ p {
     margin-bottom: 1.65em;
 }
 
-.bs-example+.highlight,
+
 .highlight {
     margin-bottom: 1.65em;
 }
@@ -109,8 +109,6 @@ input,
 kbd,
 pre,
 .btn,
-.bs-example,
-.bs-example+.highlight,
 .btn-lg,
 .btn-group-lg>.btn,
 .color-swatch,
