@@ -142,3 +142,31 @@ pre,
     -o-transform: none;
     transform: none;
 }
+
+
+/**
+ * Grid: Columns
+ * @additional
+ */
+/**
+ * .col-solo
+ * This is designed to be added to "column" sized elements where you wish to have
+ * a desired size (e.g. col-md-8 for width of 66.6667%), but you don't it to float
+ * or to have any elements next to it.
+ *
+ * This is useful for single-page type layouts where content blocks need to
+ * be slightly narrower instead of col-md-12 or container width
+ * (default-max 1170px)
+ *
+ * Example:
+ * <div class="container">
+ *     <div class="col-md-8 col-solo">
+ *         Content here
+ *     </div>
+ * </div>
+ */
+.col-solo {
+    float: none;
+    margin-left: auto;
+    margin-right auto;
+}
