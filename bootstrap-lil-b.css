@@ -1,4 +1,13 @@
 /**
+ * Bootstrap - Lil' B
+ * A Bootstrap for Bootstrap
+ *
+ * Author:  Jon Q
+ * URL:     https://github.com/ItsJonQ/bootstrap-lil-b
+ * Copyright 2014
+ */
+
+/**
  * Typography + Spacing Adjustments
  * Adjusts the typography in Bootstrap to work off of responsive ems instead
  * of pixels. If the user changes the font-size in body, all of the headers
@@ -82,8 +91,26 @@ pre,
 .img-thumbnail,
 .responsive-utilities-test span,
 .well {
-    border-radius: 0px;
+    border-radius: 0;
 }
+
+
+
+/**
+ * Affix Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.affix {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 
 
 /**
@@ -91,9 +118,12 @@ pre,
  * This removes the transition/translate properties in the modal, allowing
  * for elements within the modal to be "position: fixed" if needed.
  */
+
 .modal.fade .modal-dialog,
 .modal.in .modal-dialog {
     -webkit-transform: none;
     -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
     transform: none;
 }
