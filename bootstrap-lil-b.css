@@ -234,13 +234,13 @@ pre,
 .col-solo {
     float: none;
     margin-left: auto;
-    margin-right auto;
+    margin-right: auto;
 }
 
 /**
  * .fixed-z
  * This helper class adds the "translateZ" hack for selectors that are set
- * as position: fixed to help prevent brower repaints on browser scrolls/resize
+ * as position: fixed to help prevent brower repaints on browser scrolls/resize.
  */
 
 .fixed-z {
@@ -267,7 +267,7 @@ pre,
 
 /**
  * .text-lowercase
- * This helper class transforms the text within to all lowercase
+ * This helper class transforms the text within to all lowercase.
  */
 .text-lowercase {
     text-transform: lowercase;
@@ -275,7 +275,7 @@ pre,
 
 /**
  * .text-uppercase
- * This helper class transforms the text within to all uppercase / uppercase
+ * This helper class transforms the text within to all uppercase / uppercase.
  */
 
 .text-uppercase {
