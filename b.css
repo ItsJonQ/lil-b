@@ -230,6 +230,25 @@ pre,
 }
 
 
+
+/**
+ * Button Style Control (Flat)
+ * This styles below give buttons a "flat" look when they are active/pressed.
+ * These styles are disabled/commented out by default.
+ */
+
+/*
+.btn:active,
+.btn.active,
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    -moz-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+}
+*/
+
+
+
 /**
  * Affix Fix
  * This implements the translateZ(0) "hack" to affix elements. This prevents
@@ -301,14 +320,16 @@ pre,
  * the modal fix above.
  */
 
-/*.modal.in .modal-dialog,
+/*
+.modal.in .modal-dialog,
 .modal.fade .modal-dialog {
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
     transform: none;
-}*/
+}
+*/
 
 
 /**
