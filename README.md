@@ -10,7 +10,9 @@ Lil' B is a Bootstrap Reset Stylesheet. Lil' B was created to"fix" some margin/s
 - Load it up **after** you add bootstrap to your project
 
 #### Example ####
+```
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 **<link rel="stylesheet" type="text/css" href="css/bootstrap-lil-b.css">**
+```
 
 Enjoy! :)
