@@ -3,7 +3,7 @@ A Bootstrap for Bootstrap
 
 ![Lil B Logo](https://raw.githubusercontent.com/ItsJonQ/bootstrap-lil-b/master/images/bootstrap-lil-b-banner.jpg)
 
-Lil' B is a Bootstrap Reset Stylesheet. Lil' B was created to"fix" some margin/spacing inconsistencies and various nuances of with Bootstrap.
+Lil' B is a Bootstrap Reset Stylesheet. It was created to"fix" some margin/spacing inconsistencies and various nuances of with Bootstrap. Lil' B also has a handful of helper classes to make bootstrappin' your theme that much easier.
 
 ### How To Use ###
 - Download the bootstrap-lil-b.css file and add it to your project
@@ -16,3 +16,5 @@ Lil' B is a Bootstrap Reset Stylesheet. Lil' B was created to"fix" some margin/s
 ```
 
 Enjoy! :)
+
+P.S. Feedback welcome!
