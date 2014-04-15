@@ -87,10 +87,13 @@ h4, .h4, h5, .h5, h6, .h6 {
     font-size: 1.7em;               /* Same size as h3 */
 }
 
+blockquote {
+    font-size: 1.25em;              /* Same size as h4 */
+}
+
 p {
     margin-bottom: 1.65em;
 }
-
 
 .highlight {
     margin-bottom: 1.65em;
