@@ -160,7 +160,11 @@ pre,
 .input-group-addon.input-lg,
 .img-thumbnail,
 .modal-content,
+.navbar,
 .navbar-toggle,
+.nav-pills > li > a,
+.nav-tabs > li > a,
+.nav-tabs-justified > li > a
 .panel-group .panel,
 .popover,
 .progress,
@@ -171,6 +175,12 @@ pre,
 .well-lg,
 .well-sm {
     border-radius: 4px;             /* Adjust this if needed */
+}
+
+/*Resets .nav-tabs links to zero after being defined above*/
+.nav-tabs > li > a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 
