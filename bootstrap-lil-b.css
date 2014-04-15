@@ -7,6 +7,7 @@
  * Copyright 2014
  */
 
+
 /**
  * Typography + Spacing Adjustments
  * Adjusts the typography in Bootstrap to work off of responsive ems instead
@@ -95,7 +96,6 @@ pre,
 }
 
 
-
 /**
  * Affix Fix
  * This implements the translateZ(0) "hack" to affix elements. This prevents
@@ -111,6 +111,21 @@ pre,
     transform: translateZ(0);
 }
 
+
+/**
+ * Navbar Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.navbar-fixed-top {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
 
 
 /**
