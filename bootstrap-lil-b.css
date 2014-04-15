@@ -1,5 +1,14 @@
+/**
+ * Typography + Spacing Adjustments
+ * Adjusts the typography in Bootstrap to work off of responsive ems instead
+ * of pixels. If the user changes the font-size in body, all of the headers
+ * (h1, h2, h3, h4, h5, h6) and other text elements will respond accordingly
+ * with appropriate line-height and margin spacing.
+ */
+
 body {
     color: #444;
+    font-size: 14px; /* Adjust this if needed */
     line-height: 1.65em;
 }
 
@@ -52,6 +61,9 @@ p {
 
 /**
  * Border-Radius Control
+ * This groups all of the elements in Bootsrap with a border-radius.
+ * This allows for the user to quickly adjust the border-radius for applicable
+ * elements if needed.
  */
 
 btn,
@@ -71,4 +83,17 @@ pre,
 .responsive-utilities-test span,
 .well {
     border-radius: 0px;
+}
+
+
+/**
+ * Modal Fix
+ * This removes the transition/translate properties in the modal, allowing
+ * for elements within the modal to be "position: fixed" if needed.
+ */
+.modal.fade .modal-dialog,
+.modal.in .modal-dialog {
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
 }
