@@ -99,6 +99,25 @@ p {
     margin-bottom: 1.65em;
 }
 
+address,
+legend,
+.alert,
+.breadcrumb,
+.form-group,
+.list-group,
+.progress,
+.table,
+.well {
+    margin-bottom: 1.5em;
+}
+
+/*List-based selectors are separated*/
+dt,
+ul,
+ol {
+    margin-bottom: 1.5em;
+}
+
 
 /**
  * Border-Radius Control
