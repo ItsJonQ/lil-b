@@ -145,7 +145,8 @@ pre,
  * smoothness.
  */
 
-.navbar-fixed-top {
+.navbar-fixed-top,
+.navbar-fixed-bottom {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
