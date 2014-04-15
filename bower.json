@@ -1,0 +1,17 @@
+{
+    "name": "lil-b",
+    "description": "A Bootstrap Reset for Bootstrap",
+    "version": "0.0.1",
+    "homepage": "https://github.com/ItsJonQ/bootstrap-lil-b",
+    "main": "bootstrap-lil-b.js",
+    "keywords": [
+        "css",
+        "reset",
+        "bootstrap",
+        "lil b",
+        "responsive",
+        "front-end",
+        "fix",
+        "web"
+    ]
+}
