@@ -85,6 +85,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 .lead {
     font-size: 1.7em;               /* Same size as h3 */
+    margin-bottom: 1.25em;
 }
 
 blockquote {
@@ -104,6 +105,7 @@ legend,
 .alert,
 .breadcrumb,
 .form-group,
+.jumbotron p,
 .list-group,
 .progress,
 .table,
