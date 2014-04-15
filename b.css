@@ -122,6 +122,52 @@ ol {
 
 
 /**
+ * Border Control
+ * This groups all of the elements in Bootsrap with borders.
+ * This allows for the user to quickly adjust the border for applicable
+ * elements if needed.
+ */
+
+.img-thumbnail,
+.list-group-item,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus,
+.pager li > a,
+.pager li > span,
+.pagination > li > a,
+.pagination > li > span,
+.table-bordered,
+.table-bordered th,
+.table-bordered td,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td,
+.table-responsive,
+.thumbnail {
+    border: 1px solid #ddd;
+}
+
+/*These selectors / classes have slightly darker borders by default*/
+pre,
+.dropdown-menu,
+.form-control,
+.input-group-addon,
+.popover {
+    border: 1px solid #ccc;
+}
+
+
+/**
  * Border-Radius Control
  * This groups all of the elements in Bootsrap with a border-radius.
  * This allows for the user to quickly adjust the border-radius for applicable
