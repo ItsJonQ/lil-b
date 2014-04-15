@@ -12,7 +12,7 @@ Lil' B is a Bootstrap Reset Stylesheet. Lil' B was created to"fix" some margin/s
 #### Example ####
 ```
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-**<link rel="stylesheet" type="text/css" href="css/bootstrap-lil-b.css">**
+<link rel="stylesheet" type="text/css" href="css/bootstrap-lil-b.css">
 ```
 
 Enjoy! :)
