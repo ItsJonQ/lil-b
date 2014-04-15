@@ -13,5 +13,10 @@
         "front-end",
         "fix",
         "web"
+    ],
+    "ignore": [
+        ".*",
+        "test/**/*",
+        "images/**/*"
     ]
 }
