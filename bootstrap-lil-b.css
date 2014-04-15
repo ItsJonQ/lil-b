@@ -8,6 +8,41 @@
  */
 
 
+
+/**
+ * Typography - Base
+ * This (re)sets the font-size and line-height for the site. If the font-size
+ * is changed, all of the other fonts will respond/adjust appropriately.
+ */
+body {
+    font-size: 14px;                /* Adjust this if needed */
+    line-height: 1.65em;
+}
+
+
+/**
+ * Typography - Color Adjustments
+ * The recommended colors are listed below under their selectors. They are
+ * commented out by default.
+ *
+ * It is recommended that the darkest color are the headers, followed by the
+ * "lead", then the standard body text to help with separation and readibility.
+ */
+
+body {
+    /*color: #444;*/
+}
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+    /*color: #222;*/
+}
+
+.lead {
+    /*color: #333;*/
+}
+
+
 /**
  * Typography + Spacing Adjustments
  * Adjusts the typography in Bootstrap to work off of responsive ems instead
@@ -15,12 +50,6 @@
  * (h1, h2, h3, h4, h5, h6) and other text elements will respond accordingly
  * with appropriate line-height and margin spacing.
  */
-
-body {
-    color: #444;
-    font-size: 14px; /* Adjust this if needed */
-    line-height: 1.65em;
-}
 
 h1, .h1 {
     font-size: 2.6em;
@@ -48,15 +77,13 @@ h6, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3,
 h4, .h4, h5, .h5, h6, .h6 {
-    color: #222;
     margin-top: 1em;
     margin-bottom: 0.5em;
     line-height: 1.1em;
 }
 
 .lead {
-    color: #333;
-    font-size: 1.7em;
+    font-size: 1.7em;               /* Same size as h3 */
 }
 
 p {
@@ -92,7 +119,7 @@ pre,
 .img-thumbnail,
 .responsive-utilities-test span,
 .well {
-    border-radius: 0;
+    border-radius: 4px;             /* Adjust this if needed */
 }
 
 
@@ -165,6 +192,7 @@ pre,
  *     </div>
  * </div>
  */
+
 .col-solo {
     float: none;
     margin-left: auto;
