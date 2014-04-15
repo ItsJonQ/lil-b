@@ -249,6 +249,15 @@ pre,
 }
 
 /**
+ * .text-caps
+ * This helper class transforms the text within to all caps / uppercase
+ */
+
+.text-caps {
+    text-transform: uppercase;
+}
+
+/**
  * .v-center
  * This helper class helps vertically align elements.
  * In order to get .v-center to work properly, you have to have a child div
