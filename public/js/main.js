@@ -6,8 +6,102 @@
  * @main
  */
 
-}).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_94a733ec.js","/")
-},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":5,"buffer":2}],2:[function(require,module,exports){
+var adjustFontSize = require('./modules/module.adjustFontSize');
+}).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_6cebebaa.js","/")
+},{"./modules/module.adjustFontSize":2,"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"buffer":3}],2:[function(require,module,exports){
+(function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
+/**
+ * Adjusting Font Size
+ */
+
+var initStatus = false;
+
+// Defining the default font-size
+var defaultSize = 14;
+var currentSize = 14;
+
+// Defining the $els
+var $el;
+var $demo;
+var $current;
+
+/**
+ * adjustSize
+ * This method adjusts the font size in the demo area
+ */
+var adjustSize = function(adjustment) {
+    if(!adjustment || typeof adjustment !== 'string' || !$demo || !$current) {
+        return false;
+    }
+
+    // Changing the currentSize based on the adjustment
+    if(adjustment === 'increase-font-size') {
+        currentSize++;
+    } else {
+        currentSize--;
+    }
+
+    // Adjust the font size
+    $demo.css('fontSize', currentSize);
+    $current.html(currentSize);
+
+    // Return the currentSize
+    return currentSize;
+
+};
+
+/**
+ * render
+ * This method adds the click event to the $el object
+ */
+var render = function() {
+    if(!$el) {
+        return false;
+    }
+
+    $el.on('click', '.option', function() {
+        adjustSize($(this)[0].id);
+    });
+
+};
+
+/**
+ * initialize
+ */
+var initialize = function() {
+
+    if(initStatus) {
+        return false;
+    }
+    initStatus = true;
+
+    // Setup the $elements
+    $el = $('#adjust-font-size');
+    $demo = $('#adjust-text-demo');
+    $current = $('#current-font-size');
+
+    // Render the module
+    render();
+
+};
+
+// Initailize
+initialize();
+
+/**
+ * getCurrentSize
+ * Public method to check the current font size
+ */
+var getCurrentSize = function() {
+    return currentSize;
+};
+
+// Exporting the module
+module.exports = {
+    currentSize: getCurrentSize
+};
+}).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/modules/module.adjustFontSize.js","/modules")
+},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"buffer":3}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /*!
  * The buffer module from node.js, for the browser.
@@ -1120,7 +1214,7 @@ function assert (test, message) {
 }
 
 }).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
-},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":5,"base64-js":3,"buffer":2,"ieee754":4}],3:[function(require,module,exports){
+},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"base64-js":4,"buffer":3,"ieee754":5}],4:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
@@ -1245,7 +1339,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 }())
 
 }).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
-},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":5,"buffer":2}],4:[function(require,module,exports){
+},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"buffer":3}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 exports.read = function(buffer, offset, isLE, mLen, nBytes) {
   var e, m,
@@ -1333,7 +1427,7 @@ exports.write = function(buffer, value, offset, isLE, mLen, nBytes) {
 };
 
 }).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
-},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":5,"buffer":2}],5:[function(require,module,exports){
+},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"buffer":3}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // shim for using process in browser
 
@@ -1397,4 +1491,4 @@ process.chdir = function (dir) {
 };
 
 }).call(this,require("/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process")
-},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":5,"buffer":2}]},{},[1])
+},{"/Users/Jon/Sites/Projects/lil-b/node_modules/gulp-browserify/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":6,"buffer":3}]},{},[1])

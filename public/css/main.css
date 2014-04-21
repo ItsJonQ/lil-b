@@ -19,6 +19,10 @@ img {
     display: block;
     margin: 0 auto 30px; }
 
+.align-center {
+  margin-left: auto;
+  margin-right: auto; }
+
 /**
  * Featurette
  */
@@ -117,6 +121,11 @@ img {
     margin-bottom: 20px; }
   .default-bootstrap p {
     margin: 0 0 10px; }
+
+#adjust-text-demo .default-bootstrap {
+  line-height: 1.42857; }
+#adjust-text-demo .bootstrap-lil-b {
+  line-height: 1.65em; }
 
 /**
  * Desktop
