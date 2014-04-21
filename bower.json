@@ -1,7 +1,7 @@
 {
     "name": "lil-b",
     "description": "A Bootstrap Reset for Bootstrap",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "homepage": "https://github.com/ItsJonQ/bootstrap-lil-b",
     "main": "bootstrap-lil-b.js",
     "keywords": [
@@ -17,6 +17,7 @@
     "ignore": [
         ".*",
         "test",
-        "images"
+        "images",
+        "node_modules"
     ]
 }
