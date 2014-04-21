@@ -422,29 +422,27 @@ pre,
 /**
  * .v-center
  * This helper class helps vertically align elements.
- * In order to get .v-center to work properly, you have to have a child div
- * within the parent .v-center selector.
+ * In order to get .v-center to work properly, you have to have a child
+ * .v-center within the parent .v-center-wrap selector.
  *
  * It is recommended that you add some sort of height to your .v-center selector
  * to get the desired effect.
  *
  * Example:
- * <div class="v-center text-center">
- *     <!-- you don't need to add a class to the child div,
- *          but you can if you want -->
- *     <div>
+ * <div class="v-center-wrap text-center">
+ *     <div class="v-center">
  *         <h3>I'm vertically aligned!</h3>
  *     </div>
  * </div>
  *
  */
 
-.v-center {
+.v-center-wrap {
     display: table;
     width: 100%;
 }
 
-.v-center div:first-of-type {
+.v-center {
     display: table-cell;
     vertical-align: middle;
 }
