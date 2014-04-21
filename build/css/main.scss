@@ -10,8 +10,12 @@
 // Partials
 @import 'partials/base';
 
+// Featurette
 @import 'partials/featurette/featurette';
 @import 'partials/featurette/featurette_intro';
+
+// Defaults
+@import 'partials/defaults/default_bootstrap';
 
 // Responsive
 @import 'responsive/desktop/responsive_desktop_base';

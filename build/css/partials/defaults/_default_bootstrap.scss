@@ -1,0 +1,33 @@
+/**
+ * Default Bootstrap
+ */
+
+.default-bootstrap {
+    line-height: 1.42857143;
+
+    h2, h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .lead {
+        font-size: 21px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+}

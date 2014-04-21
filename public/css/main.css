@@ -24,7 +24,7 @@ img {
  */
 .featurette {
   background-color: transparent;
-  padding: 60px 30px;
+  padding: 30px 0;
   border-bottom: 1px solid #eee; }
   .featurette.branded {
     background-color: #604388;
@@ -91,16 +91,45 @@ img {
     font-weight: 400; }
 
 /**
+ * Default Bootstrap
+ */
+.default-bootstrap {
+  line-height: 1.42857; }
+  .default-bootstrap h2, .default-bootstrap h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1; }
+  .default-bootstrap h2 {
+    font-size: 30px;
+    line-height: 1.1; }
+  .default-bootstrap h3 {
+    font-size: 24px;
+    line-height: 1.1; }
+  .default-bootstrap .lead {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 20px; }
+  .default-bootstrap p {
+    margin: 0 0 10px; }
+
+/**
  * Desktop
  * Base
  * @responsive
  */
 @media (min-width: 992px) {
   /**
+ * Featurette
+ * Desktop
+ * @responsive
+ */
+  /**
  * Featurette Intro
  * Desktop
  * @responsive
  */
+  .featurette {
+    padding: 60px 30px; }
   .featurette.intro {
     padding: 90px 30px; }
     .featurette.intro .lead {
