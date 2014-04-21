@@ -4,13 +4,15 @@
 
 .featurette {
     background-color: transparent;
-    margin-bottom: $gutter;
+    padding: $gutter-double $gutter;
+    border-bottom: 1px solid #eee;
 
     &.branded {
         background-color: $brand-color-main;
         color: #fff;
-        padding: $gutter;
+        border: none;
     }
+
 
     &.tall-fix {
         height: 32em;
@@ -38,6 +40,12 @@
                 text-decoration: none;
             }
         }
+    }
+
+    // .featurette-title
+    .featurette-title {
+        font-size: 2.8em;
+        margin-top: 0;
     }
 
 

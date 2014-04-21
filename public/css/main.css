@@ -4,15 +4,32 @@
  * @main
  */
 /**
+ * Base
+ */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+  img.img-demo {
+    display: block;
+    margin: 0 auto 30px; }
+
+/**
  * Featurette
  */
 .featurette {
   background-color: transparent;
-  margin-bottom: 30px; }
+  padding: 60px 30px;
+  border-bottom: 1px solid #eee; }
   .featurette.branded {
     background-color: #604388;
     color: #fff;
-    padding: 30px; }
+    border: none; }
   .featurette.tall-fix {
     height: 32em; }
   .featurette .big-link-container {
@@ -35,6 +52,9 @@
         background: #fff;
         color: #604388;
         text-decoration: none; }
+  .featurette .featurette-title {
+    font-size: 2.8em;
+    margin-top: 0; }
 
 /**
  * Featurette

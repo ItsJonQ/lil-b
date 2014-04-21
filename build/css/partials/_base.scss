@@ -5,3 +5,13 @@
 html, body {
     @include font-smoothing;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    &.img-demo {
+        display: block;
+        margin: 0 auto $gutter;
+    }
+}
