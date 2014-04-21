@@ -150,157 +150,191 @@ body {
     font-size: 14px;        /* <-- Adjust this guy */
     line-height: 1.65em;
 }</pre>
+                </div>
+                <p>
+                    Above is the code that you need to adjust if you wanna tweak the font-size. You can do it in the b.css / b.min.css file, or in your site's stylesheet.
+                </P>
+                <p>
+                    Below is a quick comparison of how the typography is affected between <strong>Bootstrap</strong> and <strong>Bootstrap + Lil' B</strong> when font-size is adjusted.<br>Click either "Descrease Font Size" or "Increase Font Size" to see some magic happen!
+                </p>
+                <!-- Adjusting the Font Size -->
+                <div class="btn-group btn-group-justified" id="adjust-font-size">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default option" id="decrease-font-size">Decrease Font Size</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default disabled"><span id="current-font-size">14</span>px</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default option" id="increase-font-size">Increase Font Size</button>
+                    </div>
+                </div>
             </div>
-            <p>
-                Above is the code that you need to adjust if you wanna tweak the font-size. You can do it in the b.css / b.min.css file, or in your site's stylesheet.
-            </P>
-            <p>
-                Below is a quick comparison of how the typography is affected between <strong>Bootstrap</strong> and <strong>Bootstrap + Lil' B</strong> when font-size is adjusted.<br>Click either "Descrease Font Size" or "Increase Font Size" to see some magic happen!
+        </div>
+        <hr>
+        <div class="container lil-b-example" id="adjust-text-demo">
+            <div class="row text-left">
+                <div class="col-md-6 default-bootstrap">
+                    <label class="example-label">Default Bootstrap</label>
+                    <h2>
+                        Meggings lomo flexitarian
+                    </h2>
+                    <p class="lead">
+                        Umami Carles raw denim narwhal, next level dreamcatcher irony keffiyeh fanny pack.
+                    </p>
+                    <p>
+                        Shabby chic locavore sustainable keffiyeh umami Odd Future gastropub. Locavore Intelligentsia post-ironic organic irony. Chillwave you probably haven't heard of them irony, Tumblr Godard selfies master cleanse bespoke McSweeney's vinyl paleo fingerstache.
+                    </p>
+                    <h3>Next level Cosby sweater Tonx, Schlitz mlkshk asymmetrical</h3>
+                    <p>
+                        Pork belly Wes Anderson food truck street art +1. Polaroid Pinterest dreamcatcher, banjo Helvetica irony fanny pack. Drinking vinegar biodiesel 8-bit beard, readymade Intelligentsia American Apparel literally actually Cosby sweater DIY wolf fingerstache chia.
+                    </p>
+                </div>
+                <div class="col-md-6 bootstrap-lil-b">
+                    <label class="example-label">Bootstrap + Lil' B</label>
+                    <h2>
+                        Meggings lomo flexitarian
+                    </h2>
+                    <p class="lead">
+                        Umami Carles raw denim narwhal, next level dreamcatcher irony keffiyeh fanny pack.
+                    </p>
+                    <p>
+                        Shabby chic locavore sustainable keffiyeh umami Odd Future gastropub. Locavore Intelligentsia post-ironic organic irony. Chillwave you probably haven't heard of them irony, Tumblr Godard selfies master cleanse bespoke McSweeney's vinyl paleo fingerstache.
+                    </p>
+                    <h3>Next level Cosby sweater Tonx, Schlitz mlkshk asymmetrical</h3>
+                    <p>
+                        Pork belly Wes Anderson food truck street art +1. Polaroid Pinterest dreamcatcher, banjo Helvetica irony fanny pack. Drinking vinegar biodiesel 8-bit beard, readymade Intelligentsia American Apparel literally actually Cosby sweater DIY wolf fingerstache chia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap Can Be Janky -->
+    <section class="featurette text-center">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h2 class="featurette-title">Bootstrap Can Be "Janky"</h2>
+            </header>
+            <!-- Lead -->
+            <p class="lead col-md-10 col-solo">
+                <a href="http://jankfree.org/" target="_blank">"Jank"</a> is a term used to describe visual lag in the browser. Unfortunately, depending on the features you use, Bootstrap can cause some browser related problems.
             </p>
-            <!-- Adjusting the Font Size -->
-            <div class="btn-group btn-group-justified" id="adjust-font-size">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default option" id="decrease-font-size">Decrease Font Size</button>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default disabled"><span id="current-font-size">14</span>px</button>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default option" id="increase-font-size">Increase Font Size</button>
-                </div>
+            <p>
+                To understand the effects of "Jank" and what you can do to fix it, check out this video made by <a href="http://www.paulirish.com/" target="_blank">Paul Irish</a>!
+            </P>
+            <div class="col-md-12 col-solo">
+                <iframe width="640" height="480" src="//www.youtube.com/embed/mSK70FwUz2A" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-8 col-solo">
+
+            </div>
+            <div class="col-md-12 col-solo">
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="container lil-b-example" id="adjust-text-demo">
-        <div class="row text-left">
-            <div class="col-md-6 default-bootstrap">
-                <label class="example-label">Default Bootstrap</label>
-                <h2>
-                    Meggings lomo flexitarian
-                </h2>
-                <p class="lead">
-                    Umami Carles raw denim narwhal, next level dreamcatcher irony keffiyeh fanny pack.
-                </p>
-                <p>
-                    Shabby chic locavore sustainable keffiyeh umami Odd Future gastropub. Locavore Intelligentsia post-ironic organic irony. Chillwave you probably haven't heard of them irony, Tumblr Godard selfies master cleanse bespoke McSweeney's vinyl paleo fingerstache.
-                </p>
-                <h3>Next level Cosby sweater Tonx, Schlitz mlkshk asymmetrical</h3>
-                <p>
-                    Pork belly Wes Anderson food truck street art +1. Polaroid Pinterest dreamcatcher, banjo Helvetica irony fanny pack. Drinking vinegar biodiesel 8-bit beard, readymade Intelligentsia American Apparel literally actually Cosby sweater DIY wolf fingerstache chia.
-                </p>
-            </div>
-            <div class="col-md-6 bootstrap-lil-b">
-                <label class="example-label">Bootstrap + Lil' B</label>
-                <h2>
-                    Meggings lomo flexitarian
-                </h2>
-                <p class="lead">
-                    Umami Carles raw denim narwhal, next level dreamcatcher irony keffiyeh fanny pack.
-                </p>
-                <p>
-                    Shabby chic locavore sustainable keffiyeh umami Odd Future gastropub. Locavore Intelligentsia post-ironic organic irony. Chillwave you probably haven't heard of them irony, Tumblr Godard selfies master cleanse bespoke McSweeney's vinyl paleo fingerstache.
-                </p>
-                <h3>Next level Cosby sweater Tonx, Schlitz mlkshk asymmetrical</h3>
-                <p>
-                    Pork belly Wes Anderson food truck street art +1. Polaroid Pinterest dreamcatcher, banjo Helvetica irony fanny pack. Drinking vinegar biodiesel 8-bit beard, readymade Intelligentsia American Apparel literally actually Cosby sweater DIY wolf fingerstache chia.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-<!-- Bootstrap Can Be Janky -->
-<section class="featurette text-center">
-    <div class="container">
+    <!-- So Much Green Paint! -->
+    <section class="featurette">
         <!-- Header -->
-        <header>
-            <h2 class="featurette-title">Bootstrap Can Be "Janky"</h2>
+        <header class="text-center col-solo">
+            <h2 class="featurette-title">So Much Green Paint!</h2>
         </header>
         <!-- Lead -->
-        <p class="lead col-md-10 col-solo">
-            <a href="http://jankfree.org/" target="_blank">"Jank"</a> is a term used to describe visual lag in the browser. Unfortunately, depending on the features you use, Bootstrap can cause some browser related problems.
-        </p>
-        <p>
-            To understand the effects of "Jank" and what you can do to fix it, check out this video made by <a href="http://www.paulirish.com/" target="_blank">Paul Irish</a>!
-        </P>
-        <div class="col-md-12 col-solo">
-            <iframe width="640" height="480" src="//www.youtube.com/embed/mSK70FwUz2A" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-8 col-solo">
-
-        </div>
-        <div class="col-md-12 col-solo">
-        </div>
-    </div>
-</section>
-
-<!-- So Much Green -->
-<section class="featurette">
-    <!-- Header -->
-    <header class="text-center col-solo">
-        <h2 class="featurette-title">So Much Green Paint!</h2>
-    </header>
-    <!-- Lead -->
-    <div class="container">
-        <div class="col-md-10 col-solo">
-            <p class="lead">
-                Using <a href="https://developers.google.com/chrome-developer-tools/docs/timeline#frames_mode" target="_blank">Chrome's Developer Tools</a>, you can visually see the browser repainting / redrawing as the user scrolls (represented by the color green).
-            </p>
-            <p>
-                Below, you can see effects of Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a>. In most cases, you <em>might</em> be okay. However, jitteriness will become more obvious if you have more resource intensive stuff on your page (like video embeds or ads).
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/gifs/bootstrap-modal-scrolling-dom-001.gif" class="img-demo">
+        <div class="container">
+            <div class="col-md-10 col-solo">
+                <p class="lead">
+                    Using <a href="https://developers.google.com/chrome-developer-tools/docs/timeline#frames_mode" target="_blank">Chrome's Developer Tools</a>, you can visually see the browser repainting / redrawing as the user scrolls (represented by the color green).
+                </p>
+                <p>
+                    Below, you can see effects of Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a>. In most cases, you <em>might</em> be okay. However, jitteriness will become more obvious if you have more resource intensive stuff on your page (like video embeds or ads).
+                </p>
             </div>
-            <div class="col-md-6">
-                <img src="images/gifs/bootstrap-modal-scrolling-timeline-001.gif" class="img-demo">
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="example-label">Default Bootstrap</label>
+                    <img src="images/gifs/bootstrap-modal-scrolling-dom-001.gif" class="img-demo">
+                </div>
+                <div class="col-md-6">
+                    <label class="example-label">Bootstrap + Lil' B</label>
+                    <img src="images/gifs/bootstrap-modal-scrolling-timeline-001.gif" class="img-demo">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Green Be Gone! (Almost) -->
-<section class="featurette">
-    <!-- Header -->
-    <header class="text-center col-solo">
-        <h2 class="featurette-title">Don't Be Hatin' My Non-Repaintin'</h2>
-    </header>
-    <!-- Lead -->
-    <div class="container">
-        <div class="col-md-10 col-solo">
-            <p class="lead">
-                <strong>Lil' B</strong> utilizes the "<a href="http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/" target="_blank">translate3d/translateZ hack</a>". This trick tells the browser to render the "layer(s)" more efficiency, resulting in a much happier browsering experience.
-            </p>
-            <p>
-                Below, you can see that Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a> no longer causes any repainting. Look at how happy the gifs are without the green. <em>Look at it</em>.
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/gifs/bootstrap-modal-scrolling-dom-fixed-001.gif" class="img-demo">
+    <!-- Don't Be Hatin' My Non-Repaintin' -->
+    <section class="featurette">
+        <!-- Header -->
+        <header class="text-center col-solo">
+            <h2 class="featurette-title">Don't Be Hatin' My Non-Repaintin'</h2>
+        </header>
+        <!-- Lead -->
+        <div class="container">
+            <div class="col-md-10 col-solo">
+                <p class="lead">
+                    <strong>Lil' B</strong> utilizes the "<a href="http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/" target="_blank">translate3d/translateZ hack</a>". This trick tells the browser to render the "layer(s)" more efficiency, resulting in a much happier browsering experience.
+                </p>
+                <p>
+                    Below, you can see that Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a> no longer causes any repainting. Look at how happy the gifs are without the green. <em>Look at it</em>.
+                </p>
             </div>
-            <div class="col-md-6">
-                <img src="images/gifs/bootstrap-modal-scrolling-timeline-fixed-001.gif" class="img-demo">
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="example-label">Default Bootstrap</label>
+                    <img src="images/gifs/bootstrap-modal-scrolling-dom-fixed-001.gif" class="img-demo">
+                </div>
+                <div class="col-md-6">
+                    <label class="example-label">Bootstrap + Lil' B</label>
+                    <img src="images/gifs/bootstrap-modal-scrolling-timeline-fixed-001.gif" class="img-demo">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-</section>
+    <!-- Give it a Try -->
+    <section class="featurette">
+        <!-- Header -->
+        <header class="text-center col-solo">
+            <h2 class="featurette-title">Give It a Try</h2>
+        </header>
+        <!-- Lead -->
+        <div class="container">
+            <div class="col-md-10 col-solo">
+                <p class="lead">
+                    Try <strong>Lil' B</strong> today! We have a 100% satisfaction guarantee<sup>1</sup>. No purchase necessary, self-assembly required, batteries not included.
+                </p>
+                <p>
+                    In most cases, green is good (dollar dollar bills, cash money and all that). However, as far as browser repaints are concerned, green is bad, and quite <a href="http://www.smashingmagazine.com/2013/06/10/pinterest-paint-performance-case-study/" target="_blank">expensive</a>.
+                </p>
+                <p>
+                    Give Lil' B a shot. Any Bootstrap repaint related issues will be taken care of so you can rest easy. Your site should instantly "feel" like it has more breathing room, so your users and read happy.
+                </P>
+                <p>
+                    <small><sup>1</sup> Satisfaction may not be guaranteed. If something doesn't look right, or if you have any suggestions, please hit me up on <a href="https://twitter.com/itsJonQ" target="_blank">Twitter</a>!</small>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="example-label">Default Bootstrap</label>
+                    <img src="images/gifs/bootstrap-scrolling-repaint-001.gif" class="img-demo">
+                </div>
+                <div class="col-md-6">
+                    <label class="example-label">Bootstrap + Lil' B</label>
+                    <img src="images/gifs/bootstrap-scrolling-repaint-fixed-001.gif" class="img-demo">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- jQuery -->
-<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
-<!-- Main JS -->
-<script type="text/javascript" src="public/js/main.js"></script>
-
-
-<!-- LiveReload for Local Development -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="vendor/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="public/js/main.js"></script>
 
 </body>
 </html>
