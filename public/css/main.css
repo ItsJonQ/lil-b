@@ -78,7 +78,6 @@ footer {
         color: #604388;
         text-decoration: none; }
   .featurette .featurette-title {
-    font-size: 2.8em;
     margin-top: 0; }
   .featurette .lead {
     font-size: 1.4em;
@@ -120,6 +119,9 @@ footer {
 /**
  * Examples
  */
+.example {
+  margin-bottom: 30px; }
+
 .example-label {
   color: #999; }
 
@@ -168,6 +170,8 @@ footer {
  */
   .featurette {
     padding: 60px 30px; }
+    .featurette .featurette-title {
+      font-size: 2.8em; }
   .featurette.intro {
     padding: 90px 30px; }
     .featurette.intro .lead {
