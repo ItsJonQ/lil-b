@@ -80,7 +80,7 @@ h1, .h1, h2, .h2, h3, .h3,
 h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 1em;
     margin-bottom: 0.5em;
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 
 pre {
@@ -88,8 +88,8 @@ pre {
 }
 
 .lead {
-    font-size: 1.7em;               /* Same size as h3 */
-    margin-bottom: 1.25em;
+    font-size: 1.5em;
+    margin-bottom: 0.85em;
 }
 
 blockquote {
