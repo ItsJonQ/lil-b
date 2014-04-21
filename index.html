@@ -61,19 +61,20 @@
         </div>
     </section>
 
+    <!-- So Much Green -->
     <section class="featurette">
         <!-- Header -->
         <header class="text-center col-solo">
-            <h2 class="featurette-title">So Much Green!</h2>
+            <h2 class="featurette-title">So Much Green Paint!</h2>
         </header>
         <!-- Lead -->
         <div class="container">
             <div class="col-md-10 col-solo">
                 <p class="lead">
-                    Using <a href="https://developers.google.com/chrome-developer-tools/docs/timeline#frames_mode" target="_blank">Chrome's Developer Tools</a>, you can visually see the browser repainting / redrawing the entire screen as the user scrolls down the page.
+                    Using <a href="https://developers.google.com/chrome-developer-tools/docs/timeline#frames_mode" target="_blank">Chrome's Developer Tools</a>, you can visually see the browser repainting / redrawing as the user scrolls (represented by the color green).
                 </p>
                 <p>
-                    Chrome uses the color green to represent browser repainting. Below, you can see effects of Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a>.
+                    Below, you can see effects of Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a>. In most cases, you <em>might</em> be okay. However, jitteriness will become more obvious if you have more resource intensive stuff on your page (like video embeds or ads).
                 </p>
             </div>
         </div>
@@ -85,7 +86,33 @@
                 <img src="images/gifs/bootstrap-modal-scrolling-timeline-001.gif" class="img-demo">
             </div>
         </div>
+    </section>
 
+    <!-- Green Be Gone! (Almost) -->
+    <section class="featurette">
+        <!-- Header -->
+        <header class="text-center col-solo">
+            <h2 class="featurette-title">Don't Be Hatin' My Non-Repaintin'</h2>
+        </header>
+        <!-- Lead -->
+        <div class="container">
+            <div class="col-md-10 col-solo">
+                <p class="lead">
+                    <strong>Lil' B</strong> utilizes the "<a href="http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/" target="_blank">translate3d/translateZ hack</a>". This trick tells the browser to render the "layer" much more efficiency, resulting in much happier timeline tests.
+                </p>
+                <p>
+                    Below, you can see that Bootstrap's pop-up <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Modal</a> no longer causes any repainting. Look at how happy the gifs are without the green. <em>Look at it</em>.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/gifs/bootstrap-modal-scrolling-dom-fixed-001.gif" class="img-demo">
+            </div>
+            <div class="col-md-6">
+                <img src="images/gifs/bootstrap-modal-scrolling-timeline-fixed-001.gif" class="img-demo">
+            </div>
+        </div>
     </section>
 
     <!-- jQuery -->
