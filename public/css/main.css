@@ -91,6 +91,12 @@ img {
     font-weight: 400; }
 
 /**
+ * Examples
+ */
+.lil-b-example .example-label {
+  color: #999; }
+
+/**
  * Default Bootstrap
  */
 .default-bootstrap {
