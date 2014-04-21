@@ -40,7 +40,7 @@
  * Featurette
  */
 .featurette.intro {
-  padding: 90px 30px; }
+  padding: 60px 15px; }
   .featurette.intro .lil-b-logo {
     border: 2px solid #fff;
     -webkit-border-radius: 30px;
@@ -78,7 +78,9 @@
  * Desktop
  * @responsive
  */
-  .featurette.intro .lead {
-    font-size: 2.4em;
-    line-height: 1.15em;
-    width: 80%; } }
+  .featurette.intro {
+    padding: 90px 30px; }
+    .featurette.intro .lead {
+      font-size: 2.4em;
+      line-height: 1.15em;
+      width: 80%; } }

@@ -5,6 +5,8 @@
  */
 
 .featurette.intro {
+    padding: ($gutter-double + $gutter) $gutter;
+
     .lead {
         font-size: 2.4em;
         line-height: 1.15em;
