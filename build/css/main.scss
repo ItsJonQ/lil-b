@@ -3,3 +3,11 @@
  * This is the main SCSS file for the site's stylesheet
  * @main
  */
+
+// Modules
+@import 'modules/base';
+
+// Partials
+@import 'partials/featurette/featurette';
+@import 'partials/featurette/featurette_intro';
+

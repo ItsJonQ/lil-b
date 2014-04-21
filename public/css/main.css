@@ -3,3 +3,67 @@
  * This is the main SCSS file for the site's stylesheet
  * @main
  */
+/**
+ * Featurette
+ */
+.featurette {
+  background-color: transparent;
+  margin-bottom: 30px; }
+  .featurette.branded {
+    background-color: #604388;
+    color: #fff;
+    padding: 30px; }
+  .featurette.tall-fix {
+    height: 32em; }
+  .featurette .big-link-container {
+    text-align: center;
+    margin-bottom: 30px; }
+    .featurette .big-link-container .big-link {
+      border: 1px solid #fff;
+      color: #fff;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border-radius: 6px;
+      padding: 15px 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0 auto;
+      text-decoration: none; }
+      .featurette .big-link-container .big-link:hover {
+        background: #fff;
+        color: #604388;
+        text-decoration: none; }
+
+/**
+ * Featurette
+ */
+.featurette.intro {
+  padding: 90px 30px; }
+  .featurette.intro .lil-b-logo {
+    border: 2px solid #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    width: 200px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 30px; }
+    .featurette.intro .lil-b-logo img {
+      width: 100%;
+      height: auto; }
+  .featurette.intro .lead {
+    font-size: 2.4em;
+    line-height: 1.15em;
+    font-weight: 200;
+    margin: 0 auto 1.5em;
+    width: 80%; }
+    .featurette.intro .lead strong {
+      font-weight: 600; }
+    .featurette.intro .lead.introduction a {
+      color: #fff; }
+  .featurette.intro .h3 {
+    font-weight: 400; }

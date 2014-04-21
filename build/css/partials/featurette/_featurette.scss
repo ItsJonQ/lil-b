@@ -1,0 +1,44 @@
+/**
+ * Featurette
+ */
+
+.featurette {
+    background-color: transparent;
+    margin-bottom: $gutter;
+
+    &.branded {
+        background-color: $brand-color-main;
+        color: #fff;
+        padding: $gutter;
+    }
+
+    &.tall-fix {
+        height: 32em;
+    }
+
+    // .big-link-container
+    // This contains a big link
+    .big-link-container {
+        text-align: center;
+        margin-bottom: $gutter;
+
+        .big-link {
+            border: 1px solid #fff;
+            color: #fff;
+            @include border-radius(6px);
+            padding: $gutter-half $gutter;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0 auto;
+            text-decoration: none;
+
+            &:hover {
+                background: #fff;
+                color: $brand-color-main;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}
