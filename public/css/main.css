@@ -91,6 +91,8 @@ img {
       font-weight: 600; }
     .featurette.intro .lead.introduction a {
       color: #fff; }
+  .featurette.intro .version {
+    color: #9783b9; }
   .featurette.intro .h3 {
     font-weight: 400; }
 
