@@ -1,26 +1,26 @@
 {
-    "name": "lil-b",
-    "version": "1.0.1",
-    "description": "A Bootstrap Reset for Bootstrap",
-    "homepage": "http://itsjonq.github.io/lil-b/",
-    "main": "dist/css/b.css",
-    "keywords": [
-        "css",
-        "reset",
-        "bootstrap",
-        "lil b",
-        "responsive",
-        "front-end",
-        "fix",
-        "web"
-    ],
-    "ignore": [
-        ".*",
-        "test",
-        "images",
-        "node_modules"
-    ],
-    "dependencies": {
-        "bootstrap": ">= 3.1.1"
-    }
+  "name": "lil-b",
+  "version": "1.0.1",
+  "description": "A Bootstrap Reset for Bootstrap",
+  "homepage": "http://itsjonq.github.io/lil-b/",
+  "main": "dist/css/b.css",
+  "keywords": [
+      "css",
+      "reset",
+      "bootstrap",
+      "lil b",
+      "responsive",
+      "front-end",
+      "fix",
+      "web"
+  ],
+  "ignore": [
+      ".*",
+      "test",
+      "images",
+      "node_modules"
+  ],
+  "dependencies": {
+      "bootstrap": ">= 3.1.1"
+  }
 }
