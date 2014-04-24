@@ -1,0 +1,130 @@
+/**
+ * Bootstrap - Lil' B
+ * Control
+ */
+
+/**
+ * Border Control
+ * This groups all of the elements in Bootsrap with borders.
+ * This allows for the user to quickly adjust the border for applicable
+ * elements if needed.
+ */
+
+.img-thumbnail,
+.list-group-item,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus,
+.pager li > a,
+.pager li > span,
+.pagination > li > a,
+.pagination > li > span,
+.table-bordered,
+.table-bordered th,
+.table-bordered td,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td,
+.table-responsive,
+.thumbnail {
+    border: 1px solid #ddd;
+}
+
+/*These selectors / classes have slightly darker borders by default*/
+pre,
+.dropdown-menu,
+.form-control,
+.input-group-addon,
+.popover {
+    border: 1px solid #ccc;
+}
+
+
+/**
+ * Border-Radius Control
+ * This groups all of the elements in Bootsrap with a border-radius.
+ * This allows for the user to quickly adjust the border-radius for applicable
+ * elements if needed.
+ */
+
+btn,
+code,
+input,
+kbd,
+pre,
+.alert,
+.breadcrumb,
+.btn,
+.btn-lg,
+.btn-group-lg>.btn,
+.btn-sm,
+.btn-group-sm > .btn,
+.btn-xs,
+.btn-group-xs > .btn,
+.container .jumbotron,
+.color-swatch,
+.dropdown-menu,
+.form-control,
+.highlight,
+.input-lg,
+.input-sm,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn,
+.input-group-addon,
+.input-group-addon.input-sm,
+.input-group-addon.input-lg,
+.img-thumbnail,
+.modal-content,
+.navbar,
+.navbar-toggle,
+.nav-pills > li > a,
+.nav-tabs > li > a,
+.nav-tabs-justified > li > a
+.panel-group .panel,
+.popover,
+.progress,
+.responsive-utilities-test span,
+.thumbnail,
+.tooltip-inner,
+.well,
+.well-lg,
+.well-sm {
+    border-radius: 4px;             /* Adjust this if needed */
+}
+
+/*Resets .nav-tabs links to zero after being defined above*/
+.nav-tabs > li > a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+/**
+ * Button Style Control (Flat)
+ * This styles below give buttons a "flat" look when they are active/pressed.
+ * These styles are disabled/commented out by default.
+ */
+
+/*
+.btn:active,
+.btn.active,
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    -moz-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+}
+*/

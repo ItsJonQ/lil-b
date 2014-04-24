@@ -1,0 +1,86 @@
+/**
+ * Bootstrap - Lil' B
+ * Optimize
+ */
+
+/**
+ * Affix Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.affix {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/**
+ * Navbar Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/**
+ * Modal Fix (Fixes repaint on scroll)
+ * This adjusts the transform property which fixes browser repaint on
+ * scrolling / resizing. Using translat3d, it retains the 25% top animation
+ * on load.
+ */
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    -moz-transform: translate3d(0, 25%, 0);
+    -ms-transform: translate3d(0, 25%, 0);
+    -o-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+}
+
+
+/**
+ * Modal Fix (Allowing Positioning)
+ * This removes the transition/translate properties in the modal, allowing
+ * for elements within the modal to be "position: fixed" if needed.
+ *
+ * NOTE: This is commented out by default. Due to how translate works, you
+ * can only have translate OR a working position: fixed.. you can't have both.
+ * Hopefully this will be fixed in the next version of CSS?
+ *
+ * If you wish to use position: fixed inside of your modal (such as having a
+ * scrollspy sticky nav), you have to uncomment this, and comment out / remove
+ * the modal fix above.
+ */
+
+/*
+.modal.in .modal-dialog,
+.modal.fade .modal-dialog {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+*/

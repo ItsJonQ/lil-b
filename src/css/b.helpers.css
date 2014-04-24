@@ -1,0 +1,108 @@
+/**
+ * Bootstrap - Lil' B
+ * Helpers
+ */
+
+/**
+ * Helper Classes
+ * @additional
+ * @helper
+ */
+
+
+/**
+ * .col-solo
+ * This is designed to be added to "column" sized elements where you wish to have
+ * a desired size (e.g. col-md-8 for width of 66.6667%), but you don't it to float
+ * or to have any elements next to it.
+ *
+ * This is useful for single-page type layouts where content blocks need to
+ * be slightly narrower instead of col-md-12 or container width
+ * (default-max 1170px)
+ *
+ * Example:
+ * <div class="container">
+ *     <div class="col-md-8 col-solo">
+ *         Content here
+ *     </div>
+ * </div>
+ */
+
+.col-solo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * .fixed-z
+ * This helper class adds the "translateZ" hack for selectors that are set
+ * as position: fixed to help prevent brower repaints on browser scrolls/resize.
+ */
+
+.fixed-z {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/**
+ * .no-select
+ * This helper class disables selection for selectors. This is handy for
+ * navigations, links, headers, buttons, etc..
+ */
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**
+ * .text-lowercase
+ * This helper class transforms the text within to all lowercase.
+ */
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/**
+ * .text-uppercase
+ * This helper class transforms the text within to all uppercase / uppercase.
+ */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/**
+ * .v-center
+ * This helper class helps vertically align elements.
+ * In order to get .v-center to work properly, you have to have a child
+ * .v-center within the parent .v-center-wrap selector.
+ *
+ * It is recommended that you add some sort of height to your .v-center selector
+ * to get the desired effect.
+ *
+ * Example:
+ * <div class="v-center-wrap text-center">
+ *     <div class="v-center">
+ *         <h3>I'm vertically aligned!</h3>
+ *     </div>
+ * </div>
+ *
+ */
+
+.v-center-wrap {
+    display: table;
+    width: 100%;
+}
+
+.v-center {
+    display: table-cell;
+    vertical-align: middle;
+}
