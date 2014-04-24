@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         dist: {
           src: [
-            'src/css/b.typgraphy.css',
+            'src/css/b.typography.css',
             'src/css/b.optimize.css',
             'src/css/b.control.css',
             'src/css/b.helpers.css'],

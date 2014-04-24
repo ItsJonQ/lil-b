@@ -8,6 +8,133 @@
 
 /**
  * Bootstrap - Lil' B
+ * Typography
+ */
+
+/**
+ * Typography - Base
+ * This (re)sets the font-size and line-height for the site. If the font-size
+ * is changed, all of the other fonts will respond/adjust appropriately.
+ */
+body {
+    font-size: 14px;                /* Adjust this if needed */
+    line-height: 1.65em;
+}
+
+
+/**
+ * Typography - Color Adjustments
+ * The recommended colors are listed below under their selectors. They are
+ * commented out by default.
+ *
+ * It is recommended that the darkest color are the headers, followed by the
+ * "lead", then the standard body text to help with separation and readibility.
+ */
+
+body {
+    /*color: #444;*/
+}
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+    /*color: #222;*/
+}
+
+.lead {
+    /*color: #333;*/
+}
+
+
+/**
+ * Typography + Spacing Adjustments
+ * Adjusts the typography in Bootstrap to work off of responsive ems instead
+ * of pixels. If the user changes the font-size in body, all of the headers
+ * (h1, h2, h3, h4, h5, h6) and other text elements will respond accordingly
+ * with appropriate line-height and margin spacing.
+ */
+
+h1, .h1 {
+    font-size: 2.6em;
+}
+
+h2, .h2 {
+    font-size: 2.15em;
+}
+
+h3, .h3 {
+    font-size: 1.7em;
+}
+
+h4, .h4 {
+    font-size: 1.25em;
+}
+
+h5, .h5 {
+    font-size: 1em;
+}
+
+h6, .h6 {
+    font-size: 0.85em;
+}
+
+h1, .h1, h2, .h2, h3, .h3,
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+}
+
+pre {
+    font-size: 0.9em;
+}
+
+.lead {
+    font-size: 1.5em;
+    margin-bottom: 0.85em;
+}
+
+blockquote {
+    font-size: 1.25em;              /* Same size as h4 */
+}
+
+p {
+    margin-bottom: 1.65em;
+}
+
+.highlight {
+    margin-bottom: 1.65em;
+}
+
+address,
+legend,
+.alert,
+.breadcrumb,
+.form-group,
+.jumbotron p,
+.list-group,
+.progress,
+.table,
+.well {
+    margin-bottom: 1.5em;
+}
+
+/*List-based selectors are separated*/
+dt,
+ul,
+ol {
+    margin-bottom: 1.5em;
+}
+
+/*Adding margin-top offset to lists if followed by a paragraph for even spacing*/
+p + dt,
+p + ul,
+p + ol {
+    margin-top: -0.15em;
+}
+
+
+/**
+ * Bootstrap - Lil' B
  * Optimize
  */
 
