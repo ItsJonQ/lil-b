@@ -1,0 +1,335 @@
+/*!
+ * Lil' B - Bootstrap
+ * A Bootstrap for Bootstrap
+ * v1.0.1 (http://itsjonq.github.io/lil-b/)
+ * Copyright 2014 Jon Q
+ * Licensed under MIT (https://github.com/itsjonq/lil-b/blob/master/LICENSE)
+ */
+
+/**
+ * Bootstrap - Lil' B
+ * Optimize
+ */
+
+/**
+ * Affix Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.affix {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/**
+ * Navbar Fix
+ * This implements the translateZ(0) "hack" to affix elements. This prevents
+ * re-paints on scrolls, which helps with performance and overall page
+ * smoothness.
+ */
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/**
+ * Modal Fix (Fixes repaint on scroll)
+ * This adjusts the transform property which fixes browser repaint on
+ * scrolling / resizing. Using translat3d, it retains the 25% top animation
+ * on load.
+ */
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate3d(0, 25%, 0);
+    -moz-transform: translate3d(0, 25%, 0);
+    -ms-transform: translate3d(0, 25%, 0);
+    -o-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+}
+
+
+/**
+ * Modal Fix (Allowing Positioning)
+ * This removes the transition/translate properties in the modal, allowing
+ * for elements within the modal to be "position: fixed" if needed.
+ *
+ * NOTE: This is commented out by default. Due to how translate works, you
+ * can only have translate OR a working position: fixed.. you can't have both.
+ * Hopefully this will be fixed in the next version of CSS?
+ *
+ * If you wish to use position: fixed inside of your modal (such as having a
+ * scrollspy sticky nav), you have to uncomment this, and comment out / remove
+ * the modal fix above.
+ */
+
+/*
+.modal.in .modal-dialog,
+.modal.fade .modal-dialog {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+*/
+
+/**
+ * Bootstrap - Lil' B
+ * Control
+ */
+
+/**
+ * Border Control
+ * This groups all of the elements in Bootsrap with borders.
+ * This allows for the user to quickly adjust the border for applicable
+ * elements if needed.
+ */
+
+.img-thumbnail,
+.list-group-item,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus,
+.pager li > a,
+.pager li > span,
+.pagination > li > a,
+.pagination > li > span,
+.table-bordered,
+.table-bordered th,
+.table-bordered td,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td,
+.table-responsive,
+.thumbnail {
+    border: 1px solid #ddd;
+}
+
+/*These selectors / classes have slightly darker borders by default*/
+pre,
+.dropdown-menu,
+.form-control,
+.input-group-addon,
+.popover {
+    border: 1px solid #ccc;
+}
+
+
+/**
+ * Border-Radius Control
+ * This groups all of the elements in Bootsrap with a border-radius.
+ * This allows for the user to quickly adjust the border-radius for applicable
+ * elements if needed.
+ */
+
+btn,
+code,
+input,
+kbd,
+pre,
+.alert,
+.breadcrumb,
+.btn,
+.btn-lg,
+.btn-group-lg>.btn,
+.btn-sm,
+.btn-group-sm > .btn,
+.btn-xs,
+.btn-group-xs > .btn,
+.container .jumbotron,
+.color-swatch,
+.dropdown-menu,
+.form-control,
+.highlight,
+.input-lg,
+.input-sm,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn,
+.input-group-addon,
+.input-group-addon.input-sm,
+.input-group-addon.input-lg,
+.img-thumbnail,
+.modal-content,
+.navbar,
+.navbar-toggle,
+.nav-pills > li > a,
+.nav-tabs > li > a,
+.nav-tabs-justified > li > a
+.panel-group .panel,
+.popover,
+.progress,
+.responsive-utilities-test span,
+.thumbnail,
+.tooltip-inner,
+.well,
+.well-lg,
+.well-sm {
+    border-radius: 4px;             /* Adjust this if needed */
+}
+
+/*Resets .nav-tabs links to zero after being defined above*/
+.nav-tabs > li > a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+/**
+ * Button Style Control (Flat)
+ * This styles below give buttons a "flat" look when they are active/pressed.
+ * These styles are disabled/commented out by default.
+ */
+
+/*
+.btn:active,
+.btn.active,
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    -moz-box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 0px rgba(0, 0, 0, .125);
+}
+*/
+
+
+/**
+ * Bootstrap - Lil' B
+ * Helpers
+ */
+
+/**
+ * Helper Classes
+ * @additional
+ * @helper
+ */
+
+
+/**
+ * .col-solo
+ * This is designed to be added to "column" sized elements where you wish to have
+ * a desired size (e.g. col-md-8 for width of 66.6667%), but you don't it to float
+ * or to have any elements next to it.
+ *
+ * This is useful for single-page type layouts where content blocks need to
+ * be slightly narrower instead of col-md-12 or container width
+ * (default-max 1170px)
+ *
+ * Example:
+ * <div class="container">
+ *     <div class="col-md-8 col-solo">
+ *         Content here
+ *     </div>
+ * </div>
+ */
+
+.col-solo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * .fixed-z
+ * This helper class adds the "translateZ" hack for selectors that are set
+ * as position: fixed to help prevent brower repaints on browser scrolls/resize.
+ */
+
+.fixed-z {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/**
+ * .no-select
+ * This helper class disables selection for selectors. This is handy for
+ * navigations, links, headers, buttons, etc..
+ */
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/**
+ * .text-lowercase
+ * This helper class transforms the text within to all lowercase.
+ */
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/**
+ * .text-uppercase
+ * This helper class transforms the text within to all uppercase / uppercase.
+ */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/**
+ * .v-center
+ * This helper class helps vertically align elements.
+ * In order to get .v-center to work properly, you have to have a child
+ * .v-center within the parent .v-center-wrap selector.
+ *
+ * It is recommended that you add some sort of height to your .v-center selector
+ * to get the desired effect.
+ *
+ * Example:
+ * <div class="v-center-wrap text-center">
+ *     <div class="v-center">
+ *         <h3>I'm vertically aligned!</h3>
+ *     </div>
+ * </div>
+ *
+ */
+
+.v-center-wrap {
+    display: table;
+    width: 100%;
+}
+
+.v-center {
+    display: table-cell;
+    vertical-align: middle;
+}
