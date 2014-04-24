@@ -6,7 +6,7 @@ A Bootstrap for Bootstrap
 Lil' B is a Bootstrap Reset Stylesheet. It was created to "fix" spacing inconsistencies and various nuances of Bootstrap. Lil' B also has a handful of helper classes to make bootstrappin' your site that much easier.
 
 ### How To Use ###
-- Download the b.css file and add it to your project
+- Download the b.css file (located in dist/css/b.css) and add it to your project
 - Load it up **after** you add bootstrap to your project
 
 #####Example#####
@@ -102,3 +102,9 @@ It is recommended that you add some sort of height to your .v-center selector to
 **Enjoy! :)**
 
 P.S. Feedback welcome!
+
+### Updates ###
+#### April 24, 2014 ####
+- Split up core functions of Lil B into individual files and relocated them to src/css (e.g. src/css/b.control.css)
+- Relocated compiled files to dist/css. There you'll find b.css and b.min.css
+- The "optimization" (aka repaint fixes) have been submitted to Bootstrap for approval. Hopefully they'll add it into core! :)
