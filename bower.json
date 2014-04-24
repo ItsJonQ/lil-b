@@ -1,7 +1,7 @@
 {
     "name": "lil-b",
-    "description": "A Bootstrap Reset for Bootstrap",
     "version": "1.0.1",
+    "description": "A Bootstrap Reset for Bootstrap",
     "homepage": "http://itsjonq.github.io/lil-b/",
     "main": "dist/css/b.css",
     "keywords": [
