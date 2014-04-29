@@ -118,6 +118,9 @@ It is recommended that you add some sort of height to your .v-center selector to
 P.S. Feedback welcome!
 
 ### Updates ###
+#### April 29, 2014 ####
+- added .flex-video for responsive video embeds
+
 #### April 24, 2014 ####
 - Split up core functions of Lil B into individual files and relocated them to src/css (e.g. src/css/b.control.css)
 - Relocated compiled files to dist/css. There you'll find b.css and b.min.css
