@@ -22,8 +22,10 @@ Lil' B is a Bootstrap Reset Stylesheet. It was created to "fix" spacing inconsis
 
 ```
 <div class="container">
-    <div class="col-md-8 col-solo">
-        Content here
+    <div class="row">
+        <div class="col-md-8 col-solo">
+            Content here
+        </div>
     </div>
 </div>
 ```
@@ -31,6 +33,18 @@ Lil' B is a Bootstrap Reset Stylesheet. It was created to "fix" spacing inconsis
 This is designed to be added to "column" sized elements where you wish to have a desired size (e.g. col-md-8 for width of 66.6667%), but you don't it to float or to have any elements next to it.
 
 This is useful for single-page type layouts where content blocks need to be slightly narrower instead of col-md-12 or container width (default-max 1170px)
+
+
+#####Responsive Video Embeds#####
+*.flex-video*
+
+```
+<div class="flex-video">
+    * Insert your video embed here *
+</div>
+```
+
+This helper class allows for video embeds to be responsive. Most videos these days have a 16:9 (HD) ratio. If your video embed is of a 4:3 (SD) ratio, add .sd along with the .flex-video class.
 
 
 #####"Position:Fixed" Optimizer#####
