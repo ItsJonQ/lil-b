@@ -109,6 +109,7 @@ address,
 legend,
 .alert,
 .breadcrumb,
+.flex-video,
 .form-group,
 .jumbotron p,
 .list-group,
@@ -387,6 +388,50 @@ pre,
     margin-left: auto;
     margin-right: auto;
 }
+
+/**
+ * .flex-video
+ * This helper class allows for video embeds to be responsive. Just add your video embed inside of a parent .flex-video div.
+ *
+ * Most videos these days have a 16:9 (HD) ratio. If your video embed is of a 4:3 (SD) ratio, add .sd along with the .flex-video class.
+ *
+ * High-Depth ratio videos (16:9)
+ * <div class="flex-video">
+ *     * Insert video embed here *
+ * </div>
+ *
+ * Standard-Depth ratio videos (4:3)
+ * <div class="flex-video.sd">
+ *     * Insert video embed here *
+ * </div>
+ *
+ * This helper was inspired by the .flex-video helper found in Foundation:
+ * @source: http://foundation.zurb.com/docs/components/flex_video.html
+ */
+
+.flex-video {
+    height: 0;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.flex-video embed,
+.flex-video iframe,
+.flex-video object,
+.flex-video video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.flex-video.sd {
+    padding-top: 75%;
+}
+
 
 /**
  * .fixed-z
